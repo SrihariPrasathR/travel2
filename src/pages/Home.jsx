@@ -20,10 +20,11 @@ function Home() {
             className="rounded overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer"
           >
             <img
-              src={place.image}
-              alt={place.name}
-              className="w-full h-48 object-cover"
-            />
+  src={process.env.PUBLIC_URL + place.image}
+  alt={place.name}
+  className="w-full h-48 object-cover"
+/>
+
             <div className="px-6 py-4 bg-white">
               <h2 className="text-xl font-semibold text-center">{place.name}</h2>
             </div>
